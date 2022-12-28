@@ -3,12 +3,12 @@ import { IconButton} from "@mui/material"
 import Logout from "../../atoms/LogoutIcon/Logout"
 import Text from "../../atoms/Typography/Text"
 
-const IconButtons =()=>
+const IconButtons =(props: any)=>
 {
     return(
         <>
-            <Logout icons= {<LocalActivity/>}/>
-            <Text/>
+            {/* <Logout icontype= {<LocalActivity/>}/> */}
+            <Text variant='primary'>my button</Text>
         </>
        
     )

@@ -5,7 +5,8 @@ import { IconButton } from "@mui/material"
 const Logout = (props: any)=>{
     return(
         <IconButton>
-            <LogoutOutlined/>
+            {props.icontype}
+            {/* <LogoutOutlined/> */}
         </IconButton>
     )
 }
