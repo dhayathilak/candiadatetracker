@@ -1,17 +1,17 @@
-import { ComponentStory } from "@storybook/react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 import IconButtons from "./IconButtons";
 
-const myIconButton ={
-    title:'molecules/iconbutton',
+export default{
+    title:'molecules/iconinfo/Iconbutton',
     component: IconButtons
-}
+
+}as ComponentMeta<typeof IconButtons>
 
 const Template: ComponentStory<typeof IconButtons> = () => <IconButtons/>
-const iconbutton = Template.bind({})
+export const iconbutton = Template.bind({})
 
 
 
 
 
 
-export default myIconButton
