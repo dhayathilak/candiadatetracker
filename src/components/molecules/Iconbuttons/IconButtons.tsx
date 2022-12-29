@@ -1,16 +1,16 @@
 import { LocalActivity } from "@mui/icons-material"
 import { IconButton} from "@mui/material"
-import Logout from "../../atoms/LogoutIcon/Logout"
+import React from "react"
+import ButtonComponent from "../../atoms/Button/ButtonComponent"
+import Icon from "../../atoms/LogoutIcon/Icon"
 import Text from "../../atoms/Typography/Text"
 
-const IconButtons =(props: any)=>
+const IconButtons =()=>
 {
     return(
-        <>
-            {/* <Logout icontype= {<LocalActivity/>}/> */}
-            <Text variant='primary'>my button</Text>
-        </>
-       
+        <React.Fragment>
+            <ButtonComponent icon={<Icon/>}/>
+        </React.Fragment>    
     )
 }
 

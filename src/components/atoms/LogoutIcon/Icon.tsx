@@ -2,13 +2,12 @@ import { LogoutOutlined } from "@mui/icons-material"
 import { IconButton } from "@mui/material"
 
 
-const Logout = (props: any)=>{
+const Icon =()=>{
     return(
         <IconButton>
-            {props.icontype}
-            {/* <LogoutOutlined/> */}
+            <LogoutOutlined/>
         </IconButton>
     )
 }
 
-export default Logout
+export default Icon
