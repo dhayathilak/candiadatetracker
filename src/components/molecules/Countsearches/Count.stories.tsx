@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Count from "./Count";
 
 export default{
-    title:'molecules/countSearches/table',
+    title:'components/molecules/countSearches',
     compoenent: Count
 }as ComponentMeta<typeof Count>
 

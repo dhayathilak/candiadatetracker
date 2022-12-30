@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Profile from "./Profile";
 
 export default{
-    title: 'molecules/UserProfile/profile',
+    title: 'components/molecules/profile',
     component: Profile
 }as ComponentMeta<typeof Profile>
 

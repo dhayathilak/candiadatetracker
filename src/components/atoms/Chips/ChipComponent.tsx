@@ -1,13 +1,13 @@
 import {Chip}  from "@mui/material"
 
 
-// interface propTypes{
-//     text: string
-// }
+interface propTypes{
+    label: string
+}
 
-const ChipComponent =()=>{
+const ChipComponent =(props: propTypes)=>{
     return(
-       <Chip/>
+       <Chip label={props.label}/>
     )
 }
 

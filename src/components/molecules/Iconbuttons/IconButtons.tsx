@@ -1,15 +1,22 @@
-import { LocalActivity } from "@mui/icons-material"
+import { LocalActivity, PropaneSharp, UsbOff } from "@mui/icons-material"
 import { IconButton} from "@mui/material"
-import React from "react"
+import React, { ReactElement } from "react"
 import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import Icon from "../../atoms/LogoutIcon/Icon"
 import Text from "../../atoms/Typography/Text"
 
-const IconButtons =()=>
+interface propTypes{
+    icontext: string,
+    icon: ReactElement
+}
+
+
+
+const IconButtons =(props: propTypes)=>
 {
     return(
         <React.Fragment>
-            <ButtonComponent icon={<Icon/>}/>
+            <ButtonComponent text={props.icontext} icon={props.icon}/>
         </React.Fragment>    
     )
 }

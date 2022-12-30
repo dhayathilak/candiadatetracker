@@ -1,9 +1,14 @@
 import { Typography } from "@mui/material"
 
 
-const Text = (props: any)=>{
+interface propTypes{
+    text: string
+}
+
+
+const Text = (props: propTypes)=>{
     return(
-        <Typography>{props.text}hello</Typography>
+        <Typography>{props.text}</Typography>
     )
 }
 

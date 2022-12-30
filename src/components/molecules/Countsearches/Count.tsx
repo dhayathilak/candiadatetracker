@@ -18,7 +18,8 @@ const Count = ()=>{
             </TableHead>
             <TableBody>
                <TableCell>{<Text text='ssn verification'/>}</TableCell>
-               {/* <TableCell>{<ChipComponent text="confirmed"/>}</TableCell> */}
+               <TableCell>{<ChipComponent label="pending"/>}</TableCell>
+               <TableCell>{<Text text='23-12-2022'/>}</TableCell>
             </TableBody>
         </Table>
     )

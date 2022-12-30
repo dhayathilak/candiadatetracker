@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Info from "./Info";
 
 export default{
-    title:'molecules/UserInfo/userinfo',
+    title:'components/molecules/userinfo',
     component: Info
 } as ComponentMeta<typeof Info>
 

@@ -1,7 +1,15 @@
-const HomeTemplate =(props: any)=>{
+import {ReactElement} from 'react'
+
+
+interface propTypes{
+  sidebar: ReactElement,
+  maincontent: ReactElement
+}
+
+
+const HomeTemplate =(props: propTypes)=>{
     return(
         <div>
-          {props.header}
           <div>
             {props.sidebar}
           </div>
