@@ -4,14 +4,15 @@ import { ElementType, ReactComponentElement, ReactElement } from "react"
 
 
 interface propTypes{
-    text: string,
-    icon ?: ReactElement
+    text?: string,
+    icon ?: ReactElement,
+    path ?:string
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ButtonComponent=(props: propTypes)=>{
     return(
-        <Button startIcon={props.icon}>{props.text}</Button>
+        <Button startIcon={props.icon} href={props.path}>{props.text}</Button>
     )
 }
 

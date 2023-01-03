@@ -13,7 +13,7 @@ const HomeTemplate =(props: propTypes)=>{
           <div>
             {props.sidebar}
           </div>
-          <div>
+          <div style={{marginLeft: '250px',marginTop:'10px',width:'80%',height:'90%'}}>
             {props.maincontent}
           </div>
         </div>

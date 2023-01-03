@@ -1,47 +1,64 @@
-import { AppsOutage, FeedTwoTone, Gavel, Home, InsertChartTwoTone, ManageAccountsTwoTone, Person } from "@mui/icons-material"
+import { AppsOutage, DvrTwoTone, FeedTwoTone, Gavel, InsertChartTwoTone, ManageAccountsTwoTone, Person } from "@mui/icons-material"
 import { List, ListItem, ListItemText, ListSubheader } from "@mui/material"
 import Text from "../../atoms/Typography/Text"
 import IconButtons from "../../molecules/Iconbuttons/IconButtons"
 
 const Sidebar = ()=>{
+   const icons = [
+      {
+         buttontext:'Home',
+         buttonIcon: <AppsOutage/>
+      },
+      {
+       buttontext: 'Candidates',
+       buttonIcon: <Person/>  
+      },
+      {
+         buttontext:'Adverseactions',
+         buttonIcon:<Gavel/>
+      },
+      {
+         buttontext:'Logs',
+         buttonIcon:<FeedTwoTone/>
+      },
+      {
+         buttontext:'Analytics',
+         buttonIcon:<InsertChartTwoTone/>
+      },
+      {
+         buttontext:'Account',
+         buttonIcon:<ManageAccountsTwoTone/>
+      },
+      {
+         buttontext:'Screenings',
+         buttonIcon:<DvrTwoTone/>
+      }
+      
+   ]
+
+
     return(
-       <List>
+      <>
+       {/* <List>
          <ListSubheader>
             <Text text='Recruit'/>
          </ListSubheader>
-         <ListItem>
+         </List> */}
+         <List sx={{width:'200px',height:'90%',position:'fixed',marginTop:'10px',marginBottom:'20px',marginLeft:'20px',boxShadow: '5px 5px 5px 5px grey'}}>
+         <ListSubheader>
+            <Text text='Recruit'/>
+         </ListSubheader>
+         {icons.map((icon)=>(
+            <ListItem key='icon'>
             <ListItemText>
-                <IconButtons icontext='Home' icon={<AppsOutage/>}/>
+                <IconButtons icontext={icon.buttontext} icon={icon.buttonIcon}/>
             </ListItemText>
-         </ListItem>
-         <ListItem>
-            <ListItemText>
-                <IconButtons icontext='Candidate' icon={<Person/>}/>
-            </ListItemText>
-         </ListItem>
-         <ListItem>
-            <ListItemText>
-                <IconButtons icontext='Adverse actions' icon={<Gavel/>}/>
-            </ListItemText>
-         </ListItem>
-         <ListItem>
-            <ListItemText>
-                <IconButtons icontext='Logs' icon={<FeedTwoTone/>}/>
-            </ListItemText>
-         </ListItem>
-         <ListItem>
-            <ListItemText>
-                <IconButtons icontext='Analytics' icon={<InsertChartTwoTone/>}/>
-            </ListItemText>
-         </ListItem>
-         <ListItem>
-            <ListItemText>
-                <IconButtons icontext='Accounts' icon={<ManageAccountsTwoTone/>}/>
-            </ListItemText>
-         </ListItem>
-        
-        
+          </ListItem>
+         ))}
+             
        </List>
+      
+      </>
     )
 }
 

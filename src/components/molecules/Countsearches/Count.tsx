@@ -1,7 +1,8 @@
 import { Table, TableBody, TableCell, TableHead } from "@mui/material"
 import ChipComponent from "../../atoms/Chips/ChipComponent"
 import Text from "../../atoms/Typography/Text"
-
+import './Constants.tsx'
+import{text,label,date} from './Constants'
 // interface propTypes={
 //     header: [],
 
@@ -10,16 +11,16 @@ import Text from "../../atoms/Typography/Text"
 
 const Count = ()=>{
     return(
-        <Table>
+        <Table sx={{boxShadow:'5px 5px 5px 5px grey'}}>
             <TableHead>
                 <TableCell>Search</TableCell>
                 <TableCell>Status</TableCell>
                 <TableCell>Date</TableCell>
             </TableHead>
             <TableBody>
-               <TableCell>{<Text text='ssn verification'/>}</TableCell>
-               <TableCell>{<ChipComponent label="pending"/>}</TableCell>
-               <TableCell>{<Text text='23-12-2022'/>}</TableCell>
+               <TableCell>{<Text text={text}/>}</TableCell>
+               <TableCell>{<ChipComponent label={label}/>}</TableCell>
+               <TableCell>{<Text text={date}/>}</TableCell>
             </TableBody>
         </Table>
     )

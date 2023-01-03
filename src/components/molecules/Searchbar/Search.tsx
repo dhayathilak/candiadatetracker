@@ -1,13 +1,10 @@
 import { SearchOutlined } from "@mui/icons-material"
-import { InputAdornment, TextField } from "@mui/material"
+import { Input, InputAdornment, TextField } from "@mui/material"
 
 const Search = ()=>{
     return(
        <>
-        <InputAdornment position="start">
-           <SearchOutlined/>
-        </InputAdornment>
-        <TextField/>
+        <TextField InputProps={{'startAdornment': <InputAdornment position="start"><SearchOutlined/></InputAdornment>}} fullWidth/>
        </>
     )
 }
