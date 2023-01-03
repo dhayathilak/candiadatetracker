@@ -1,4 +1,3 @@
-import { ReactElement } from "react"
 import CandidateTable from "../components/organisms/CandidateTable/CandidateTable"
 import Sidebar from "../components/organisms/Sidebar/Sidebar"
 import HomeTemplate from "../components/templates/HomeTemplate"

@@ -39,11 +39,6 @@ const Sidebar = ()=>{
 
     return(
       <>
-       {/* <List>
-         <ListSubheader>
-            <Text text='Recruit'/>
-         </ListSubheader>
-         </List> */}
          <List sx={{width:'200px',height:'90%',position:'fixed',marginTop:'10px',marginBottom:'20px',marginLeft:'20px',boxShadow: '5px 5px 5px 5px grey'}}>
          <ListSubheader>
             <Text text='Recruit'/>

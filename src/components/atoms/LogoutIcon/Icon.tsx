@@ -1,11 +1,18 @@
 import { LogoutOutlined } from "@mui/icons-material"
-import { IconButton } from "@mui/material"
+import { IconButton, PropTypes } from "@mui/material"
+import { ReactElement } from "react"
 
+interface propTypes{
+    icontype?: ReactElement,
+    type?: string,
+    imageUrl?: string
+}
 
-const Icon =()=>{
+const Icon =(props: propTypes)=>{
     return(
         <IconButton>
-            <LogoutOutlined/>
+            {props.icontype}
+            {/* <LogoutOutlined/> */}
         </IconButton>
     )
 }

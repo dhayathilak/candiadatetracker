@@ -1,14 +1,41 @@
-import { Add, Download, Filter, FilterList, MoreVert } from "@mui/icons-material"
-import { Link, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination,Grid, Stack, TableRow } from "@mui/material"
+import { Add, Download, FilterList, MoreVert } from "@mui/icons-material"
+import { Link, Table, TableBody, TableCell, TableContainer, TableHead,Grid,TableRow } from "@mui/material"
+import axios from "axios"
+import { useEffect, useState } from "react"
 import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import ChipComponent from "../../atoms/Chips/ChipComponent"
 import Text from "../../atoms/Typography/Text"
 import IconButtons from "../../molecules/Iconbuttons/IconButtons"
-import AdverseNotice from "../../molecules/Pre-AdverseNotice/AdverseNotice"
 import Search from "../../molecules/Searchbar/Search"
 
+type candidatetype = {
+    name:string,
+    adjunction:string,
+    status:string,
+    location:string,
+    date:string
+}
 
+const headers=[
+    'Name',
+    "Adjunction",
+    "Status",
+    "Location",
+    "Date"
+]
 const CandidateTable = ()=>{
+    const [data,setData] = useState<candidatetype[]>([])
+    
+    async function getData(){
+        const resp = await axios.get('http://localhost:3000/Candidates')
+        setData(resp.data)
+    }
+    useEffect(()=>{
+         getData()
+    },[])
+    console.log(data)
+    
+
     return(
         <>
         
@@ -38,36 +65,20 @@ const CandidateTable = ()=>{
                         <TableCell><IconButtons icontext="Filter" icon={<FilterList/>}/></TableCell>
                         <TableCell><ButtonComponent icon={<MoreVert/>}/></TableCell>
                     </TableRow>
-                    {/* <Grid container> */}
-                        {/* <Grid item xs={4}>
-                            <Text text='Candidate Info'/>
-                        </Grid>
-                        <Grid item xs={2}></Grid>
-                        <Grid item xs={3}>
-                            <Search/>
-                        </Grid>
-                        <Grid item xs={3}>
-                            <IconButtons icontext="Filter" icon={<FilterList/>}/>
-                            <ButtonComponent icon={<MoreVert/>}/>
-                        </Grid> */}
-                            
-                        
-                    {/* </Grid>
-                     */}
                 </TableHead>
                 <TableHead>
-                    <TableCell>Name</TableCell>
-                    <TableCell>Adjunction</TableCell>
-                    <TableCell>Status</TableCell>
-                    <TableCell>Location</TableCell>
-                    <TableCell>Date</TableCell>
+                    {headers.map((h)=>(<TableCell key={h}>{h}</TableCell>))}
                 </TableHead>
                 <TableBody>
-                    <TableCell><Link href='/candidate'>John smith</Link></TableCell>
-                    <TableCell>-</TableCell>
-                    <TableCell>{<ChipComponent label="verified"/>}</TableCell>
-                    <TableCell>{<Text text='loaction'/>}</TableCell>
-                    <TableCell>{<Text text='25-11-2022'/>}</TableCell>
+                    {data.map((d)=>(
+                           <TableRow key={d.name}>
+                           <TableCell><Link href='/candidate'>{d.name}</Link></TableCell>
+                           <TableCell>{d.adjunction}</TableCell>
+                           <TableCell>{<ChipComponent label={d.status}/>}</TableCell>
+                           <TableCell>{<Text text={d.location}/>}</TableCell>
+                           <TableCell>{<Text text={d.date}/>}</TableCell>
+                       </TableRow>
+                    ))}
                 </TableBody>
             </Table>
         </TableContainer>

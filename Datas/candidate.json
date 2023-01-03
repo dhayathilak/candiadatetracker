@@ -1,0 +1,29 @@
+{
+    "Candidates": [
+        {
+        "name": "John smith",
+        "adjunction": "-",
+        "status": "clear",
+        "location": "Nevada",
+        "date":"24/11/2022"
+        },
+        {
+            "name": "Jason stathm",
+            "adjunction": "-",
+            "status": "pending",
+            "location": "Singapore",
+            "date":"28/11/2022"
+    
+        },
+        {
+            "name": "Hardy jones",
+            "adjunction": "-",
+            "status": "completed",
+            "location": "Washington",
+            "date":"29/11/2022"
+    
+        }
+
+
+]
+}

@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/Mainpage';
 import { Route, Routes } from 'react-router-dom';
-import CandidateInfo from './components/molecules/CandidateInfo/CandidateInfo';
 import CandidatePage from './pages/Candidatepage';
+import AdversePage from './pages/AdversePage';
 
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/candidate' element={<CandidatePage/>}/>
+        <Route path='/adversenotice' element={<AdversePage/>}/>
       </Routes>
        
     </div>

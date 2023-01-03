@@ -1,3 +1,4 @@
+import { ArrowBack } from "@mui/icons-material"
 import { Card, CardContent, Divider, TextField } from "@mui/material"
 import { Stack } from "@mui/system"
 import ButtonComponent from "../../atoms/Button/ButtonComponent"
@@ -6,7 +7,12 @@ import Text from "../../atoms/Typography/Text"
 
 const AdverseNotice = ()=>{
     return(
-        <Card>
+        <>
+        <Stack direction='row' spacing={2}>
+            <ButtonComponent icon={<ArrowBack/>} path='/candidate'/>
+            <Text text='Pre-Adverse Notice'/>
+        </Stack>
+        <Card sx={{boxShadow:'5px 5px 5px 5px grey',marginTop:'10px'}}>
             <CardContent>
                 <Stack direction="row" spacing={1}>
                     <Text text='From'/><Text text=':'/><Text text='mailid'/>
@@ -41,6 +47,7 @@ const AdverseNotice = ()=>{
                     </Stack>
             </CardContent>
         </Card>
+        </>
     )
 }
 

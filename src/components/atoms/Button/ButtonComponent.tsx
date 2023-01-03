@@ -6,7 +6,8 @@ import { ElementType, ReactComponentElement, ReactElement } from "react"
 interface propTypes{
     text?: string,
     icon ?: ReactElement,
-    path ?:string
+    path ?:string,
+    type ?: string
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
