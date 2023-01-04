@@ -4,8 +4,13 @@ import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import Text from "../../atoms/Typography/Text"
 import CandidateInfo from "../CandidateInfo/CandidateInfo"
 import Count from "../Countsearches/Count"
+import ReportInfo from "../ReportInfo/ReportInfo"
+import { currentdata } from "../../organisms/CandidateTable/CandidateTable"
 
-const Candidate  =()=>{
+
+const Candidate  =(currentdata: currentdata)=>{
+    let candidateDetails = {'Name': currentdata.name,'Email':currentdata.email}
+    console.log(candidateDetails)
     return(
         <> 
             
@@ -16,14 +21,14 @@ const Candidate  =()=>{
                         
                     </Grid>
                     <Grid item xs={1}>
-                        <Text text='john'/>
+                        <Text text={candidateDetails.Name}/>
                     </Grid>
                     <Grid item xs={6}></Grid>
                     <Grid item xs={4}><ButtonComponent text="Pre-advrseaction" path='/adversenotice'/><ButtonComponent text="Engage"/></Grid>
                 
                 </Grid>
-                <CandidateInfo/>
-                <CandidateInfo/>
+                <CandidateInfo details={candidateDetails}/>
+                <ReportInfo/>
                 <Count/>
             </Stack>
            

@@ -1,7 +1,8 @@
 import { AppsOutage, DvrTwoTone, FeedTwoTone, Gavel, InsertChartTwoTone, ManageAccountsTwoTone, Person } from "@mui/icons-material"
 import { List, ListItem, ListItemText, ListSubheader } from "@mui/material"
+import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import Text from "../../atoms/Typography/Text"
-import IconButtons from "../../molecules/Iconbuttons/IconButtons"
+
 
 const Sidebar = ()=>{
    const icons = [
@@ -46,7 +47,8 @@ const Sidebar = ()=>{
          {icons.map((icon)=>(
             <ListItem key='icon'>
             <ListItemText>
-                <IconButtons icontext={icon.buttontext} icon={icon.buttonIcon}/>
+               <ButtonComponent icon={icon.buttonIcon} text={icon.buttontext}/>
+                {/* <IconButtons icontext={icon.buttontext} icon={icon.buttonIcon}/> */}
             </ListItemText>
           </ListItem>
          ))}

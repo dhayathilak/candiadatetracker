@@ -1,10 +1,12 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Info from "./Info";
 
+
+
 export default{
     title:'components/molecules/userinfo',
     component: Info
 } as ComponentMeta<typeof Info>
 
-const Template: ComponentStory<typeof Info>=()=><Info/>
+const Template: ComponentStory<typeof Info>=(args)=><Info {...args}/>
 export const info = Template.bind({})
