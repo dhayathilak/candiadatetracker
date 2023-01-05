@@ -7,13 +7,15 @@ interface propTypes{
     text?: string,
     icon ?: ReactElement,
     path ?:string,
-    type ?: string
+    ripple?:boolean,
+    type ?: 'text'|'contained'|'outlined'
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ButtonComponent=(props: propTypes)=>{
+    // const {type}= props
     return(
-        <Button startIcon={props.icon} href={props.path}>{props.text}</Button>
+        <Button startIcon={props.icon} href={props.path} variant ={props.type} disableFocusRipple disableRipple>{props.text}</Button>
     )
 }
 

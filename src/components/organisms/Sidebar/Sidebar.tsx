@@ -1,10 +1,28 @@
-import { AppsOutage, DvrTwoTone, FeedTwoTone, Gavel, InsertChartTwoTone, ManageAccountsTwoTone, Person } from "@mui/icons-material"
-import { List, ListItem, ListItemText, ListSubheader } from "@mui/material"
+import { AppsOutage, DvrTwoTone, FeedTwoTone, Gavel, InsertChartTwoTone, ManageAccountsTwoTone, Person} from "@mui/icons-material"
+import { List, ListItem, ListItemText, ListSubheader} from "@mui/material"
+import { makeStyles } from "@mui/styles"
+import {blue, grey, indigo, purple} from '@mui/material/colors'
+
 import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import Text from "../../atoms/Typography/Text"
 
 
+const useStyles = makeStyles({
+   list:{
+      height:'90vh',position:'fixed',boxShadow: '5px 5px 5px 5px grey',background: grey[50]
+   },
+   text:{
+      padding : '0px',
+      background: grey[50],
+      color: indigo[900],
+      fontVariantCaps: "inherit"
+      
+   }
+})
+
+
 const Sidebar = ()=>{
+   const classes = useStyles()
    const icons = [
       {
          buttontext:'Home',
@@ -40,15 +58,14 @@ const Sidebar = ()=>{
 
     return(
       <>
-         <List sx={{width:'200px',height:'90%',position:'fixed',marginTop:'10px',marginBottom:'20px',marginLeft:'20px',boxShadow: '5px 5px 5px 5px grey'}}>
-         <ListSubheader>
-            <Text text='Recruit'/>
+         <List className={classes.list}>
+         <ListSubheader className={classes.text}>
+            <Text text='Recruit' name={classes.text}/>
          </ListSubheader>
          {icons.map((icon)=>(
             <ListItem key='icon'>
             <ListItemText>
                <ButtonComponent icon={icon.buttonIcon} text={icon.buttontext}/>
-                {/* <IconButtons icontext={icon.buttontext} icon={icon.buttonIcon}/> */}
             </ListItemText>
           </ListItem>
          ))}

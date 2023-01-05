@@ -1,18 +1,20 @@
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 import Candidate from "../components/molecules/Candidate/Candidate"
 import Sidebar from "../components/organisms/Sidebar/Sidebar"
 import HomeTemplate from "../components/templates/HomeTemplate"
-import { currentdata } from "../components/organisms/CandidateTable/CandidateTable"
+import { currentdata, getCurrentdata } from "../Services/services"
 
-const CandidatePage= (currentdata: currentdata)=>{
-    const t = {}
+
+const CandidatePage= ()=>{
+    let {id} = useParams()
+    console.log(id)
+    
+
+   
+    
     return(
-        <HomeTemplate sidebar={<Sidebar/>} maincontent={<Candidate name={currentdata.name} 
-        zipcode={currentdata.zipcode} adjunction={currentdata.adjunction} 
-        completeddate={currentdata.completeddate} createdat={currentdata.createdat} dob={currentdata.dob} 
-        driverslicense={currentdata.driverslicense} email={currentdata.email} package={currentdata.package}
-        id={currentdata.id} phone={currentdata.phone} socialsecurity={currentdata.socialsecurity} status={currentdata.status}
-        turnaroundtime={currentdata.turnaroundtime}
-        />}/>
+        <HomeTemplate sidebar={<Sidebar/>} maincontent={<Candidate id={id}/>}/>
     )
 }
 

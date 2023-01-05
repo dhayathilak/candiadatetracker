@@ -3,5 +3,7 @@ import UserIcon from "./userIcon"
 import img from '../../../../sample.png'
 
 test('render',()=>{
-    render(<UserIcon imagepath={img}/>)
+    // const func = render(<UserIcon imagepath={img}/>)
+    expect(render(<UserIcon imagepath={img}/>)).toBeDefined();
+
 })

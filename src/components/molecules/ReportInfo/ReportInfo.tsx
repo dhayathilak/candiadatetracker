@@ -3,36 +3,43 @@ import { AccessTimeTwoTone, CalendarTodayTwoTone, CheckCircleTwoTone, EventTwoTo
 import Info from "../UserInfo/Info"
 
 
-const icons=[
-    {
-        desc:'Status',
-        icon:<CheckCircleTwoTone/>
-    },
-    {
-        desc:'Adjunction',
-        icon:<GavelTwoTone/>
-    },
-    {
-        desc:'Package',
-        icon:<InventoryTwoTone/>
-    },
-    {
-        desc:'CreatedAt',
-        icon:<CalendarTodayTwoTone/>
-    },
-    {
-        desc:'CompletedDate',
-        icon:<EventTwoTone/>
-    },
-    {
-        desc:'Turn Around Time',
-        icon:<AccessTimeTwoTone/>
-    }
-]
 
 
 
-const ReportInfo = ()=>{
+const ReportInfo = (reportdetails: any)=>{
+    console.log(reportdetails.reportdetails.name)
+    const icons=[
+        {
+            desc:'Status',
+            detail: reportdetails.reportdetails.status,
+            icon:<CheckCircleTwoTone/>
+        },
+        {
+            desc:'Adjunction',
+            detail: reportdetails.reportdetails.adjunction,
+            icon:<GavelTwoTone/>
+        },
+        {
+            desc:'Package',
+            detail: reportdetails.reportdetails.package,
+            icon:<InventoryTwoTone/>
+        },
+        {
+            desc:'CreatedAt',
+            detail: reportdetails.reportdetails.createdat,
+            icon:<CalendarTodayTwoTone/>
+        },
+        {
+            desc:'CompletedDate',
+            detail: reportdetails.reportdetails.completeddate,
+            icon:<EventTwoTone/>
+        },
+        {
+            desc:'Turn Around Time',
+            detail: reportdetails.reportdetails.turnaroundtime,
+            icon:<AccessTimeTwoTone/>
+        }
+    ]
     
     return(
      <>
@@ -48,7 +55,7 @@ const ReportInfo = ()=>{
                           <Grid container spacing={3}>
                            {icons.map((icon)=>(
                               <Grid item xs={4} key='i'>
-                                 <Info header={icon.desc} detail="" icontype={icon.icon}/>
+                                 <Info header={icon.desc} detail={icon.detail} icontype={icon.icon}/>
                              </Grid>))}
                              
                           </Grid>
