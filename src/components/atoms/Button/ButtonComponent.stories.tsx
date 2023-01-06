@@ -12,3 +12,9 @@ export const buttoncomponent = Template.bind({})
 buttoncomponent.args={
     text:'primary'
 }
+
+export const button2 = Template.bind({})
+button2.args={
+    text:'Engage',
+    type:'contained'
+}

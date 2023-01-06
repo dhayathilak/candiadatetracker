@@ -6,7 +6,8 @@ export type candidatetype = {
     adjunction:string,
     status:string,
     location:string,
-    date:string
+    date:string,
+    type:string
 }
 
 export type currentdata ={

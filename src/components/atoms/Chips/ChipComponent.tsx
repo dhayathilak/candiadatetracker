@@ -3,12 +3,13 @@ import {Chip}  from "@mui/material"
 
 interface propTypes{
     label: string,
-    type?: 'default'|'primary'|'secondary'|'warning'
+    type?: any,
+    name?: string
 }
 
 const ChipComponent =(props: propTypes)=>{
     return(
-       <Chip label={props.label} color={props.type}/>
+       <Chip label={props.label} color={props.type} variant="filled" className={props.name}/>
     )
 }
 

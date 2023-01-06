@@ -1,15 +1,32 @@
 import { ArrowBack } from "@mui/icons-material"
 import { Card, CardContent, Divider, TextField } from "@mui/material"
 import { Stack } from "@mui/system"
+import { useState ,useEffect} from "react"
+import { useParams } from "react-router-dom"
+import { currentdata, getCurrentdata } from "../../../Services/services"
 import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import Check from "../../atoms/Checkbox/Check"
 import Text from "../../atoms/Typography/Text"
 
-const AdverseNotice = ()=>{
+const AdverseNotice = (id: any)=>{
+    console.log(id)
+    // const {id}= useParams()
+    // const [currentdata,setCurrentData] = useState<currentdata[]>([])
+    // console.log(id.id)
+    // async function getcurrent(){
+    //     let resp = await getCurrentdata(id.id)
+    //     setCurrentData(resp)
+    // }
+    // useEffect(()=>{
+    //     getcurrent()
+    // },[])
+    // console.log(currentdata)
+
+    // console.log(id)
     return(
         <>
         <Stack direction='row' spacing={2}>
-            <ButtonComponent icon={<ArrowBack/>} path='/candidate'/>
+            <ButtonComponent icon={<ArrowBack/>} path='/candidate/:id'/>
             <Text text='Pre-Adverse Notice'/>
         </Stack>
         <Card sx={{boxShadow:'5px 5px 5px 5px grey',marginTop:'10px'}}>

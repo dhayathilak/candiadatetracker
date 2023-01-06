@@ -1,5 +1,6 @@
 import { BadgeTwoTone, LocalPhone, Mail, Person,ExpandMore, PlaceTwoTone, ShieldTwoTone, CalendarTodayTwoTone } from "@mui/icons-material"
 import { Accordion, AccordionDetails, AccordionSummary,Card, CardContent, Divider, Grid } from "@mui/material"
+import { makeStyles } from "@mui/styles"
 import Text from "../../atoms/Typography/Text"
 import Info from "../UserInfo/Info"
 
@@ -7,6 +8,7 @@ import Info from "../UserInfo/Info"
 
 
 const CandidateInfo = (details:any)=>{
+   
     console.log(details.details.name)
     
 
@@ -66,12 +68,11 @@ const CandidateInfo = (details:any)=>{
     return(
      <>
      
-        <Accordion sx={{boxShadow:'5px 5px 5px 5px grey'}}>
+        <Accordion>
             <AccordionSummary expandIcon={<ExpandMore/>}>
-                    <Text text="Candidate Information" type="h6"/> 
+                    <Text text="Candidate Information" type='subtitle1'/> 
             </AccordionSummary>
             <AccordionDetails>
-                 <Divider/>
                   <Card>
                        <CardContent>
                            

@@ -38,7 +38,7 @@ const Candidate  =(id :any)=>{
                         <Text text={`${result[1]}`} type='h6'/>
                     </Grid>
                     <Grid item xs={5}></Grid>
-                    <Grid item xs={4}><ButtonComponent text="Pre-advrseaction" path='/adversenotice'/><ButtonComponent text="Engage" type="contained"/></Grid>
+                    <Grid item xs={4}><ButtonComponent text="Pre-advrseaction" path= '/adversenotice'/><ButtonComponent text="Engage" type="contained"/></Grid>
                 
                 </Grid>
                 <CandidateInfo details={currentdata}/>

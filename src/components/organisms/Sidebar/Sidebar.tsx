@@ -5,18 +5,31 @@ import {blue, grey, indigo, purple} from '@mui/material/colors'
 
 import ButtonComponent from "../../atoms/Button/ButtonComponent"
 import Text from "../../atoms/Typography/Text"
+import baseTheme from "../../../Themes"
 
 
 const useStyles = makeStyles({
    list:{
-      height:'90vh',position:'fixed',boxShadow: '5px 5px 5px 5px grey',background: grey[50]
+      position:'absolute',borderRadius:'6px',background: '#FFFFFF',height:'80vh'
    },
    text:{
-      padding : '0px',
-      background: grey[50],
-      color: indigo[900],
-      fontVariantCaps: "inherit"
-      
+      background:'#FFFFFF',
+      color:'#224DFF'
+      // position: 'absolute',
+      // width: '78px',
+      // height: '20px',
+      // left:'28px',      
+   },
+   listbutton:{
+      fontFamily: baseTheme.typography.fontFamily,
+      fontStyle: 'normal',
+      fontWeight:baseTheme.typography.fontWeightMedium,
+      fontSize:'14px',
+      lineHeight:'20px',
+      color:baseTheme.palette.primary.main,
+      background:'#3E414D;',
+      borderRadius:'6px',
+      animate:'instant'
    }
 })
 
@@ -65,7 +78,7 @@ const Sidebar = ()=>{
          {icons.map((icon)=>(
             <ListItem key='icon'>
             <ListItemText>
-               <ButtonComponent icon={icon.buttonIcon} text={icon.buttontext}/>
+               <ButtonComponent icon={icon.buttonIcon} text={icon.buttontext} name={classes.listbutton}/>
             </ListItemText>
           </ListItem>
          ))}

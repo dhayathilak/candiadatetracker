@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <ThemeProvider theme={baseTheme}>
+    
           <App />
-    </ThemeProvider>
+  
   </BrowserRouter> 
 );
 

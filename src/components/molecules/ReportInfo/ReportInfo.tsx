@@ -1,6 +1,7 @@
 import { Accordion,AccordionDetails,AccordionSummary,Card,CardContent,Grid } from "@mui/material"
 import { AccessTimeTwoTone, CalendarTodayTwoTone, CheckCircleTwoTone, EventTwoTone, ExpandMore, GavelTwoTone, InventoryTwoTone } from "@mui/icons-material"
 import Info from "../UserInfo/Info"
+import Text from "../../atoms/Typography/Text"
 
 
 
@@ -44,9 +45,9 @@ const ReportInfo = (reportdetails: any)=>{
     return(
      <>
      
-        <Accordion sx={{boxShadow:'5px 5px 5px 5px grey'}}>
+        <Accordion>
             <AccordionSummary expandIcon={<ExpandMore/>}>
-                    <h1>ReportInfo</h1>  
+                   <Text text='Report Information' type='subtitle1'/>
             </AccordionSummary>
             <AccordionDetails>
                   <Card>

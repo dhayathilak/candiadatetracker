@@ -17,7 +17,7 @@ const Count = ()=>{
                     </TableRow>
                 </TableHead>
                 
-            <TableHead style={{backgroundColor:'grey'}}>
+            <TableHead style={{backgroundColor:'#F7F8FA'}}>
                 <TableCell>Search</TableCell>
                 <TableCell>Status</TableCell>
                 <TableCell>Date</TableCell>
@@ -25,7 +25,7 @@ const Count = ()=>{
             <TableBody>
                 {countsearch.map((c)=>(<TableRow key={c.text}>
                     <TableCell key={c.text}>{<Text text={c.text}/>}</TableCell>
-                    <TableCell>{<ChipComponent label={c.label} type={"secondary"}/>}</TableCell>
+                    <TableCell>{<ChipComponent label={c.label} type={c.color}/>}</TableCell>
                     <TableCell>{<Text text={c.date}/>}</TableCell>
                     </TableRow>))}
                
