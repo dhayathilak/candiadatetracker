@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage/>}/>
           <Route path= '/candidate/:id' element={<CandidatePage/>}/>
-          <Route path='/adversenotice' element={<AdversePage/>}/>
+          <Route path='/adversenotice/:id' element={<AdversePage/>}/>
         </Routes>
       </ThemeProvider>
        

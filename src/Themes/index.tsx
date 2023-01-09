@@ -1,6 +1,8 @@
 import { blue, grey, indigo} from '@mui/material/colors';
 import { createTheme, Theme } from '@mui/material/styles';
 import { DefaultTheme } from '@mui/styles';
+import '@fontsource/inter'
+// import inter
 
 
 declare module '@mui/material/styles'{
@@ -8,6 +10,9 @@ declare module '@mui/material/styles'{
         palette:{
         primary:{
             main: string
+        },
+        secondary:{
+            main:string
         }
       }
     }
@@ -16,21 +21,16 @@ declare module '@mui/material/styles'{
 const baseTheme: Theme= createTheme({
     palette:{
         primary: {
-            main: indigo[500]
+            main: grey[900]
         },
-        // secondary:{
-        //     main: grey[500]
-        // },
-        // mode:'light',
+        secondary:{
+            main: indigo[400]
+        },
+
         background:{
-            paper: grey[200],
-            default: blue[200]
+            paper: grey[100],
         }
 
-    },
-    typography:{
-        fontFamily:'Inter',
-        fontWeightMedium:500
     },
     components:{
         'MuiChip':{
@@ -67,10 +67,9 @@ const baseTheme: Theme= createTheme({
         'MuiTypography':{
             styleOverrides:{
                 root:{
-                    fontFamily:'inter',
+                    fontFamily:'Inter',
                     fontStyle:'normal',
                     fontWeight:'500',
-                    color:'#2C2C2E'
                 }
             }
         },
