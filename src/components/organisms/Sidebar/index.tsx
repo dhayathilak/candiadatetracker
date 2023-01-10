@@ -10,40 +10,45 @@ import Profile from "../../molecules/UserProfile"
 
 
 const useStyles = makeStyles({
+   recruitimage:{
+      position:'relative',
+      right:'34%',
+      top:'60px',
+      width:'78px',
+      height:'20px',
+   },
    icon:{
       position:'relative',
-      top:'300%',
       color: baseTheme.palette.secondary.main,
      },
    
    text:{
+      
       position:'relative',
-      top:'30%',
       color: baseTheme.palette.primary.main
    },
    list:{
       position:'relative',
+      top:'5px',
       background: '#ffffff',
       borderRadius:'6px',
       width: '100%',
-      height: '720px'
+      height: '95%'
    },
-   image:{
-      position:'absolute',
-      left:'28px',
-      top:'2px',
-      width:'78px',
-      height:'20px',
-      bottom:'2px'
+   listtext:{
+      position:'relative',
+      top:'37px'
    },
+   
    divider:{
-      top:'644px',
-      bottom:'200px',
-      posiiton:'absolute',
-      border:'1px solid red'
+      top:'370px',
+      position:'relative',
+      border:'1px solid #E5E7ED'
    },
    profile:{
-      left:'20%',
+      position:'relative',
+      top:'380px',
+      left:'22px',
       width:'5px',
       height:'10px'
    }
@@ -97,23 +102,26 @@ const Sidebar = ()=>{
       <>
         <Box className={classes.list}>
          <List  subheader={<ListSubheader>
-            <img src={Recruit} className={classes.image}/>
+            <img src={Recruit} className={classes.recruitimage}/>
             {/* Recruit */}
             
          </ListSubheader>}>
         
          {icons.map((icon)=>(
             <ListItem key={icon.id}>
-            <div>
-               <ListItemText>
-                  <ButtonComponent icon={icon.buttonIcon} text={icon.buttontext}/>
-               </ListItemText>
-            </div>
+               <div className={classes.listtext}>
+                  <ListItemText>
+                     <ButtonComponent icon={icon.buttonIcon} text={icon.buttontext}/>
+                  </ListItemText>
+               </div>
           </ListItem>
          ))}
-        
-         <Divider classes={classes.divider}/>
-         <Profile name={classes.profile}/>
+         <div className={classes.divider}>
+            <Divider/>
+         </div>
+         <div className={classes.profile}>
+            <Profile/>
+         </div>
        </List>
        </Box>
         

@@ -1,4 +1,4 @@
-import { blue, grey, indigo} from '@mui/material/colors';
+import { blue, grey, indigo, purple} from '@mui/material/colors';
 import { createTheme, Theme } from '@mui/material/styles';
 import { DefaultTheme } from '@mui/styles';
 import '@fontsource/inter'
@@ -18,6 +18,12 @@ declare module '@mui/material/styles'{
     }
 }
 
+declare module '@mui/material/Button' {
+    interface ButtonPropsVariantOverrides {
+      dashed: true;
+    }
+  }
+
 const baseTheme: Theme= createTheme({
     palette:{
         primary: {
@@ -33,6 +39,20 @@ const baseTheme: Theme= createTheme({
 
     },
     components:{
+
+        'MuiButton':{
+            styleOverrides:{
+                contained:{
+                    backgroundColor:'#224DFF'
+                }
+            },
+            variants:[{
+                props:{variant:'dashed'},
+                style:{background:indigo[400]}
+            }]
+                
+            
+        },
         'MuiChip':{
             styleOverrides:{
                 root:{

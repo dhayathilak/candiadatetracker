@@ -1,6 +1,6 @@
 import { BadgeTwoTone, LocalPhone, Mail, Person,ExpandMore, PlaceTwoTone, ShieldTwoTone, CalendarTodayTwoTone, PersonOutline, MailOutline, BadgeOutlined, LocalPhoneOutlined, PlaceOutlined, ShieldOutlined, CalendarTodayOutlined } from "@mui/icons-material"
-import { Accordion, AccordionDetails, AccordionSummary,Card, CardContent, Grid } from "@mui/material"
-import { indigo } from "@mui/material/colors"
+import { Accordion, AccordionDetails, AccordionSummary,Card, CardContent, Divider, Grid } from "@mui/material"
+import { grey, indigo } from "@mui/material/colors"
 import { makeStyles } from "@mui/styles"
 import baseTheme from "../../../Themes"
 import Text from "../../atoms/Typography"
@@ -8,10 +8,17 @@ import Info from "../UserInfo"
 
 
 const useStyles = makeStyles({
-  icon:{
-   color: baseTheme.palette.secondary.main,
-  }
-})
+   icon:{
+    color: baseTheme.palette.secondary.main,
+    background: '#FAFAFC',
+    border: `1px solid ${baseTheme.palette.primary.main}`,
+    borderRadius:'5px'
+   },
+   text:{
+       color:grey[500],
+       alignContent:'right'
+   }
+ })
 
 const CandidateInfo = (details:any)=>{
    const classes = useStyles()
@@ -22,7 +29,7 @@ const CandidateInfo = (details:any)=>{
     const icons = [
 
       {
-         desc:<Text text='Name' type='Body 2'/>,
+         desc:<Text text='Name' type='Body 2' name={classes.text}/>,
          detail: <Text text={details.details.data.name} type='Body 1'/>,
          icon: <PersonOutline className={classes.icon}/>
       },
@@ -80,18 +87,14 @@ const CandidateInfo = (details:any)=>{
                     <Text text="Candidate Information" type='subtitle1'/> 
             </AccordionSummary>
             <AccordionDetails>
-                  <Card>
-                       <CardContent>
-                           
-                          <Grid container spacing={3}>
+               <Divider/>
+                <Grid container spacing={3} sx={{marginTop:'2px'}}>
                            {icons.map((icon)=>(
                               <Grid item xs={4} key='i'>
                                  <Info header={icon.desc} detail={icon.detail} icontype={icon.icon}/>
                              </Grid>))}
                              
-                          </Grid>
-                       </CardContent>
-                  </Card>
+               </Grid>
             </AccordionDetails>
         </Accordion>
      </>

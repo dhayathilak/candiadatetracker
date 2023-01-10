@@ -1,4 +1,4 @@
-import { Accordion,AccordionDetails,AccordionSummary,Card,CardContent,Grid } from "@mui/material"
+import { Accordion,AccordionDetails,AccordionSummary,Card,CardContent,Divider,Grid } from "@mui/material"
 import { AccessTimeOutlined, AccessTimeTwoTone, CalendarTodayOutlined, CalendarTodayTwoTone, CheckCircleOutline, CheckCircleTwoTone, EventOutlined, EventTwoTone, ExpandMore, GavelOutlined, GavelTwoTone, InventoryOutlined, InventoryTwoTone } from "@mui/icons-material"
 import Info from "../UserInfo"
 import Text from "../../atoms/Typography"
@@ -10,6 +10,9 @@ import { grey } from "@mui/material/colors"
 const useStyles = makeStyles({
     icon:{
      color: baseTheme.palette.secondary.main,
+     background: '#FAFAFC',
+     border: `1px solid ${baseTheme.palette.primary.main}`,
+     borderRadius:'5px'
     },
     text:{
         color:grey[500]
@@ -61,18 +64,14 @@ const ReportInfo = (reportdetails: any)=>{
                    <Text text='Report Information' type='subtitle1'/>
             </AccordionSummary>
             <AccordionDetails>
-                  <Card>
-                       <CardContent>
-                           
-                          <Grid container spacing={3}>
-                           {icons.map((icon)=>(
-                              <Grid item xs={4} key='i'>
-                                 <Info header={icon.desc} detail={icon.detail} icontype={icon.icon}/>
-                             </Grid>))}
-                             
-                          </Grid>
-                       </CardContent>
-                  </Card>
+                <Divider/> 
+                <Grid container spacing={3} sx={{marginTop:'2px'}}>
+                {icons.map((icon)=>(
+                    <Grid item xs={4} key='i'>
+                        <Info header={icon.desc} detail={icon.detail} icontype={icon.icon}/>
+                    </Grid>))}
+                    
+                </Grid>
             </AccordionDetails>
         </Accordion>
      </>

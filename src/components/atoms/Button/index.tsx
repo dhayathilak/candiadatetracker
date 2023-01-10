@@ -10,15 +10,17 @@ interface propTypes{
     icon ?: ReactElement,
     link ?: any,
     path ?:any,
-    name?: string,
-    type ?: any
+    name?: any,
+    type ?: any,
+    size?:any,
+    color?:any
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ButtonComponent=(props: propTypes)=>{
     // const {type}= props
     return(
-        <Button startIcon={props.icon} component ={props.link} to={props.path} variant ={props.type} classes={props.name}>{props.text}</Button>
+        <Button startIcon={props.icon} size={props.size} component ={props.link} to={props.path} variant ={props.type} classes={props.name} color={props.color}>{props.text}</Button>
     )
 }
 
