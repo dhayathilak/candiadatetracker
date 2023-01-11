@@ -19,19 +19,20 @@ const Candidate  =(data:any)=>{
             
         
             <Stack direction='column' spacing={3}>
-                <Grid container spacing={1}>
-                   <Grid item xs={1}>
-                        <ButtonComponent icon={<ArrowBack/>} type='text' link ={Link} path={{pathname:'/'}}/>
-                   </Grid>
-                   <Grid item xs={2}><Text text={data.data.name} type='h6'/></Grid>
-                   <Grid item xs={6}></Grid>
-                   <Grid item xs={3}>
-                       <div style={{flexDirection:'row',display:'flex',justifyContent:'space-between'}}>
-                            <ButtonComponent text="Pre-advrseaction" link={Link}  type='outlined' path= {{pathname: `/adversenotice/${data.data.id}`}}/>
-                            <ButtonComponent text="Engage" type="contained"/> 
-                       </div>
-
-                   </Grid>
+                <Grid container direction="row" justifyContent='space-between' display='inline-flex' xs={12}>
+                    <Grid item xs ={6} container>
+                        <Grid item>
+                            <ButtonComponent icon={<ArrowBack/>} type='text' link ={Link} path={{pathname:'/'}}/>
+                    </Grid>
+                    <Grid item><Text text={data.data.name} type='h6'/></Grid>
+                    
+                    </Grid>
+                    <Grid item xs={6} container spacing={1}>
+                        <Grid item><ButtonComponent text="Pre-advrseaction" link={Link}  type='outlined' path= {{pathname: `/adversenotice/${data.data.id}`}}/></Grid>
+                        <Grid item><ButtonComponent text="Engage" type="contained"/> </Grid>
+                    </Grid>
+                   
+                   
                 </Grid>                    
                 <CandidateInfo details={data}/>
                 <ReportInfo reportdetails={data}/>
