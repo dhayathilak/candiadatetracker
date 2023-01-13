@@ -6,7 +6,7 @@ import CandidateTable from "../organisms/CandidateTable"
 import Sidebar from "../organisms/Sidebar"
 
 
-const Dummyview = ()=> <div></div>
+const Dummyview = ()=> {return(<div></div>)}
 
 test('pages',()=>{
     expect(render(
