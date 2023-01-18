@@ -15,6 +15,7 @@ export type currentdata ={
     dob:string,
     phone:string,
     zipcode:string,
+    report:{}
     socialsecurity:string,
     driverslicense:string,
     createdat:string,

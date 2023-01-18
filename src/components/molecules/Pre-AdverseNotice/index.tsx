@@ -32,7 +32,7 @@ const AdverseNotice = (data: any)=>{
                 </Stack>
                 <Divider/>
                 <Stack direction="row" spacing={1}>
-                    <Text text='to'/><Text text=':'/><Text text={data.data.email} type='caption3'/>
+                    <Text text='to'/><Text text=':'/><Text text={data.data.emailid} type='caption3'/>
                 </Stack>
                 <Divider/>
                 <Stack direction="row" spacing={1}>
