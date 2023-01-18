@@ -36,22 +36,22 @@ const ReportInfo = (reportdetails: any)=>{
         },
         {
             desc:<Text text='Package' type='body2' name={classes.text}/>,
-            detail: <Text text={reportdetails.reportdetails.data.package} type='body1'/>,
+            detail: <Text text={reportdetails.reportdetails.data.report[0].package} type='body1'/>,
             icon:<InventoryOutlined className={classes.icon}/>
         },
         {
             desc:<Text text='Created At' type='body2' name={classes.text}/>,
-            detail: <Text text={reportdetails.reportdetails.data.createdat} type='body1'/>,
+            detail: <Text text={reportdetails.reportdetails.data.date} type='body1'/>,
             icon:<CalendarTodayOutlined className={classes.icon}/>
         },
         {
             desc:<Text text='Completed Date' type='body2' name={classes.text}/>,
-            detail: <Text text={reportdetails.reportdetails.data.completeddate} type='body1'/>,
+            detail: <Text text={reportdetails.reportdetails.data.date} type='body1'/>,
             icon:<EventOutlined className={classes.icon}/>
         },
         {
             desc:<Text text='Turn Around Time' type='body2' name={classes.text}/>,
-            detail: <Text text={reportdetails.reportdetails.data.turnaroundtime} type='body1'/>,
+            detail: <Text text={reportdetails.reportdetails.data.report[0].turn_around_time} type='body1'/>,
             icon:<AccessTimeOutlined className={classes.icon}/>
         }
     ]

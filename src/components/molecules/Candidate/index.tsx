@@ -10,8 +10,9 @@ import { Link } from "react-router-dom"
 
 
 
+
 const Candidate  =(data:any)=>{
-    console.log(data.data.name)
+    // console.log(data.data[0].name)
     
     return(
         <> 
@@ -28,7 +29,7 @@ const Candidate  =(data:any)=>{
                     
                     </Grid>
                     <Grid item xs={6} container spacing={1}>
-                        <Grid item><ButtonComponent text="Pre-advrseaction" link={Link}  type='outlined' path= {{pathname: `/adversenotice/${data.data.id}`}}/></Grid>
+                        <Grid item><ButtonComponent text="Pre-advrseaction" link={Link}  type='outlined' path= {{pathname: `/adversenotice/${data.id}`}}/></Grid>
                         <Grid item><ButtonComponent text="Engage" type="contained"/> </Grid>
                     </Grid>
                    

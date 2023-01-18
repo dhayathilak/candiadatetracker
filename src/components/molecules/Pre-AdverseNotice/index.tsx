@@ -15,6 +15,7 @@ const useStyles = makeStyles({
 })
 
 const AdverseNotice = (data: any)=>{
+    console.log(data)
     const classes = useStyles()
     
     const salutation = ` Dear ${data.data.name}`

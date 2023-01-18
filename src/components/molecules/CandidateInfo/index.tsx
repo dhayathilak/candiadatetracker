@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const CandidateInfo = (details:any)=>{
    const classes = useStyles()
    
-    console.log(details.details.data.name)
+   //  console.log(name)
     
 
     const icons = [
@@ -35,7 +35,7 @@ const CandidateInfo = (details:any)=>{
       },
       {
          desc:'Email',
-         detail: details.details.data.email,
+         detail: details.details.data.emailid,
          icon:<MailOutline className={classes.icon}/>
       },
       {
@@ -56,19 +56,19 @@ const CandidateInfo = (details:any)=>{
       },
       {
          desc:'SocialSecurity',
-         detail: details.details.data.socialsecurity,
+         detail: details.details.data.social_security,
          icon:<ShieldOutlined className={classes.icon}/>
    
       },
       {
          desc:'Drivers license',
-         detail: details.details.data.driverslisence,
+         detail: details.details.data.drivers_licsense,
          icon:<BadgeOutlined className={classes.icon}/>
    
       },
       {
          desc:'Created At',
-         detail: details.details.data.createdat,
+         detail: details.details.data.date,
          icon:<CalendarTodayOutlined className={classes.icon}/>
    
       }

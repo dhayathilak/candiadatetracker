@@ -22,8 +22,8 @@ const CandidatePage= ()=>{
     console.log(currentdata)
 
 
-    const result = Object.keys(currentdata).map(function(k: any) { return currentdata[k] });
-    console.log(result[1])
+    // const result = Object.keys(currentdata).map(function(k: any) { return currentdata[k] });
+    // console.log(result[1])
 
    
     
