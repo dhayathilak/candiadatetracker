@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 
