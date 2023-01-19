@@ -1,0 +1,65 @@
+{
+    "Candidates": [
+        {
+        "id":1,
+        "name": "John smith",
+        "email": "john.smith@gmail.com",
+        "dob":"24-12-1856",
+        "phone":"(555) 555-5555",
+        "zipcode":"94158",
+        "socialsecurity":"xxxx-xx-x90",
+        "driverslisence":"ftest11",
+        "createdat":"24-11-2022",
+        "adjunction": "-",
+        "status": "clear",
+        "type":"success",
+        "package":"employeepro",
+        "completeddate":"dec 4,2022 12:01PM",
+        "turnaroundtime":"1 day,15 hours",
+        "location": "Nevada",
+        "date":"24/11/2022"
+        },
+        {
+            "id":2,
+            "name": "Jason stathm",
+            "email": "jason.s@gmail.com",
+            "dob":"27-04-1990",
+            "phone":"(555) 444-5555",
+            "zipcode":"94158",
+            "socialsecurity":"xxxx-xx-x80",
+            "driverslisence":"fttest45",
+            "createdat":"24-11-2022",
+            "adjunction": "-",
+            "status": "consider",
+            "type":"warning",
+            "package":"employeepro",
+            "completeddate":"jan 4,2023 12:01PM",
+            "turnaroundtime":"1 day,15 hours",
+            "location": "california",
+            "date":"24/02/2022"
+    
+        },
+        {
+            "id":3,
+            "name": "Hardy Jones",
+            "email": "Hardy.jns@gmail.com",
+            "dob":"01-04-1990",
+            "phone":"(555) 888-5555",
+            "zipcode":"94158",
+            "socialsecurity":"xxxx-xx-x80",
+            "driverslisence":"fttest45",
+            "createdat":"24-11-2022",
+            "adjunction": "-",
+            "status": "consider",
+            "type":"warning",
+            "package":"employeepro",
+            "completeddate":"jan 4,2023 12:01PM",
+            "turnaroundtime":"1 day,15 hours",
+            "location": "california",
+            "date":"24/02/2022"
+    
+        }
+
+
+]
+}

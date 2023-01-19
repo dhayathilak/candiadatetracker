@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/atoms/Avatar/index.test.tsx">
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/atoms/Chips/index.test.tsx">
+    <testCase name="render" duration="73"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/atoms/Typography/index.test.tsx">
+    <testCase name="text" duration="57"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/atoms/Button/index.test.tsx">
+    <testCase name="render" duration="114"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/templates/index.test.tsx">
+    <testCase name="pages" duration="92"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/atoms/Checkbox/index.test.tsx">
+    <testCase name="render" duration="137"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/atoms/LogoutIcon/index.test.tsx">
+    <testCase name="render" duration="79"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Countsearches/index.test.tsx">
+    <testCase name="courtsearches" duration="210"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/ReportInfo/index.test.tsx">
+    <testCase name="reportinfo" duration="149">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;data&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'data')
+    at ReportInfo (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/ReportInfo/index.tsx:29:61)
+    at renderWithHooks (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/ReportInfo/index.test.tsx:5:18)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/UserProfile/index.test.tsx">
+    <testCase name="profile" duration="141">
+      <failure message="Error: expect(received).toMatchSnapshot()"><![CDATA[Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `profile 1`
+
+- Snapshot  - 19
++ Received  + 64
+
+@@ -8,100 +8,145 @@
+          <div
+            class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+          >
+            <img
+              class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+-             src="data:image/png;base64,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"
++             src="sample.png"
+            />
+          </div>
++         <div
++           class="css-1okj3ks-MuiStack-root"
++         >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              james
++           </p>
++           <p
++             class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++           >
++             james@gmail.com
+            </p>
++         </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
++           <svg
++             aria-hidden="true"
++             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
++             data-testid="LogoutIcon"
++             focusable="false"
++             viewBox="0 0 24 24"
++           >
++             <path
++               d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
++             />
++           </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+-       <p
+-         class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+-       >
+-         james.com
+-       </p>
+      </div>
+      <div>
+        <div
+          class="css-w4z10b-MuiStack-root"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+          >
+            <img
+              class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+-             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEUAAAD////4+Pj19fX7+/vV1dXk5OR1dXXp6emqqqrg4OCbm5vt7e3R0dEJCQk5OTnIyMjb29u+vr5OTk6IiIhDQ0O0tLSkpKRiYmI9PT1+fn6UlJQwMDBnZ2ciIiIRERFcXFwcHBzDw8OOjo4lJSUyMjJTU1N5eXltbW1ISEiDg4O3TX06AAAInUlEQVR4nO2d61brOAyFk95TektbSqHQe6Hw/g84zXRYBwbZsa0tJe5h/2ZRfyuJLcvSdpIqqNGZZvPt+/i4GY12z4/vy1W27zU0fvmiRPoHOtOnx4TUbD7pSf96Kk3YfhrTdJ+6X/VFB5CKEnZWazveVeOsKTeGVJBw+OqCd1VX8kEKEU5m7nyFzrnMOFIhwva9H1+h5UBiJKkIYbPrz1foDj+UQnjCRRjfRc8T+GBSPGFzGwx40Qd4NIXAhO0NB/CyPuK/RizhHY+v0BQ6oBRM+MIHTJIVckQplLDlscbbBP4YcYTNkhDUXS+wMRWCEfZ2KMDLrgM1qEIowoFTlO2qV9CoCoEIG7BX9KozZliFQIQBgahdb5hxpSjCLRoQuGhACA94QNzSjyDcSwAmSQcwtBRC2JMBTMb8oRUCEL4LEYJmGz7hSgowSfYAQD5hRw4wWbfqQLgVJEwONSCcSgImCSDNyCRsQcPRn9pWTvggC5gk7aoJpQEBuwweYXjm0FnsZDiP8ChPyN7wswiFJ9KruNMpi3CpQchN9nMIBxqAyX2FhJkKIXeu4RCC8qNlmldG2NQBTDaVEarMpIV4FRsMwrkW4aIqQuGg+4+6FRFqfYaXjXBFhEIZNkqsrFs4odJqWGhYDeGTHiErORxO6FkTxBErXRNO+KxHyNpBBRMOmFUXPmKdmAYTSuZJ/6/HSgj7ioTPnHriYMJckXDNqUANJmwrEm44lVLBhENFQtbu4pfQKM23dFTJW6pJuKuEUHMufa5kLtVc8ceck9JgQqn6BErvDEBG5K1wZvEp1iliOKGhm0lCT9UQnvUIs2oIATXdrmJ1KYQTqiWEmScX4YR626cRB5CTEVYj5J3lMwghvQcueqiKULzS5FOsdCmHUC1uYwGyTkiV8onL6ghFip9/ilkOzSHU2UCNmI3QrJcc3oNAiVspzCJUCdy4jaUsQo2CmhMTkFnXpnDCxjvEZxPKP8QdF5BbXxrYmO4u1tYQQSi+wWADsivZhYtqAM1PXMImsHX0pxCdluzXQLQQGuEHwn/RBSsWmFWJV/EJ5VLDRwAfpHdNLCWF8eVBdFgKRTbsaOYqSJesSPob1esMIZQI3lgVJl+F6eXGH5eyyi++CdSPjy7F3OC86lCuEeCFH2j9BXP+gJab8jKk34VzbwE+RX7T4RcBHXgmIL41yGrgPyFdlDDZxTHYDAvqE9UBeLgs0b6mWK+v1hsXkHfORAntSMcLw3cCBpFwV8EOY794lnAyFXCGDF02ZGwTRdw9G0E5RiHrSyGH1tz7BPxDyr5UzGU393mOo4MYn6RTcs/VuOb0IGqVLOp2PXwbleGtxe2uhR3LW5PV1pgzPi4foDE2LXFP9jQd5A8fL6fvcI/neZbL+nh/iks46Lcnexf3+Fbxl9PFYjppd5puNb/5fj/MO1wnpWDC1mBx+PMC7lboB9L+U9057t4Nw/99GGFz3/1RTANlzH9YbswOgTFrCOHkTE4ea1AK9/J+fJAz0+MhZG/sT7gwl0K9YhbuqXmNWfpPvr6EJQknwPZuYPeEefdl9CPcl+bv37kLePnOpOuXS/UhbDg57rCMR3tOfileb4oHoWsu7RgeqLgWWfl88O6EHjUJH2HZpNyjTs59t+xM6LXjOwbUUDT8yjqcC20cCRu+ZYgz3/V54dv97vq9uxGG+K1vPT7HVhbQ3e+I6ETo/QSvmmVuE0I+DyvKccvsOBGGW169lM4IzSy8DtcpTHQh5FUiHCxva2PKM7Vz+RAcCPl9Fees/3PjMRiu2MVGI4fwppwQc6K0ee2upsN23u/08/Ywm58xNeIOniDlhIq9ogEqn1BLCcVrZJkq/RTLCFEHu2IqLX4rIwTfWyGgslWxhFCxFTZYJakNO6GOQylTJS5SdkI6I1Q32YN8K6GecSBLdkMCK2Ecj7DkIdoINa0vWLI+RBthLI/QvuxbCKOYSK+yNdJaCAUvH4HLsiZaCOsdcn+XJQA3E6qaeXFliU7NhHXfVHyXuebWSNioesx+Ml9FZyRUuLoCKuP5rJFQ0WIWImPezUQYTTzzKWNcYyJU9LLGyNiCYiJkF/uqyxS5GQhbp/J/WTOZDKMNhJoeuiCZUqcGQjX/IKAMx0AGwm3Vww2QYb0wEFY92hAZPkSaUNO6EybDpUI0oaKfHlA+hGoXrEBFJ6Rowvrn8inRUw1J2Cgtz66l6PtoSEJNn2egnt0J45xokhFZikUSKlnNwUVONSShyq1/AiJLW0hCsXuohUVWZVKEA1HfIEGRkylFGGXMVog0XaIIa1+dYBLpv08Rxrg5vIoqkaIIY10s6AMailDxvjGwqGwURRjrckjH3hSh4p0AYFHVQwRhS/G+MbAogzeCMLJTp6+i3LMIwkiqaChR5/kEYbQhDZ0VJggj3f8WGrsRRhu0JcmaaBomCCPd4f8rN8LYzre/ishjEISK1+DC5UYY79bil/AWCIktMEEYQ/W6SbdPSJwD3xghkcb4JYxMbt9hzHPpb0xz1e3HpVGVP38XVQx9W1kMqgSTyrVVPc5wUReWUvnS+OoSP0U1JVCEcVXpfxV1CPx3nj1pXrkNFVnZRhHK3o4jKOdTbr0bRsFyr8WIrlD/qg3FYqhrq3qsYfKoa4t0vaC7u26oRthwb8sNVbIb/MUMhBHuL0yXXZq6guJbMEwWcTfTu2Zs5zb2H8aWjzJ2c5v7gFUu+4XJbIdpJozIcMDq4GLpx4/otPtkMdu0+WJEk1bc2WyGrO4tscw2Vh8lu8dQHNYYDI+hKLLDY5YTVgTh26zMCr7Uc29Q79YEU3+zB2Gt55uTg72ni39pv65Fw3cuN0O4+QgP6xjCOV4v5Op23a7ZdmrjfNmEu2P54K42die7Fw+/cK+bAzpZt/pTm9nHxOuuEO/7LZrD7O5tdjrudDtpN7vjeDt/WPS9De3/AbOhjBG9lMkwAAAAAElFTkSuQmCC"
++             src="sample.png"
+            />
+          </div>
++         <div
++           class="css-1okj3ks-MuiStack-root"
++         >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+            >
+              james
+            </p>
++           <p
++             class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++           >
++             james@gmail.com
++           </p>
++         </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
++           <svg
++             aria-hidden="true"
++             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
++             data-testid="LogoutIcon"
++             focusable="false"
++             viewBox="0 0 24 24"
++           >
++             <path
++               d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
++             />
++           </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+-       <p
+-         class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+-       >
+-         james.com
+-       </p>
+      </div>
+    </body>,
+-   "container": <div>
++   "container": <div>
+      <div
+        class="css-w4z10b-MuiStack-root"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+        >
+          <img
+            class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+-           src="data:image/png;base64,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"
++           src="sample.png"
+          />
+        </div>
++       <div
++         class="css-1okj3ks-MuiStack-root"
++       >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            james
+          </p>
++         <p
++           class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++         >
++           james@gmail.com
++         </p>
++       </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
++       >
++         <svg
++           aria-hidden="true"
++           class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
++           data-testid="LogoutIcon"
++           focusable="false"
++           viewBox="0 0 24 24"
+          >
++           <path
++             d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
++           />
++         </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+-     <p
+-       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+-     >
+-       james.com
+-     </p>
+    </div>,
+    "debug": [Function],
+    "findAllByAltText": [Function],
+    "findAllByDisplayValue": [Function],
+    "findAllByLabelText": [Function],
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/UserProfile/index.test.tsx:6:32)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/CandidateInfo/index.test.tsx">
+    <testCase name="info" duration="83">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;data&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'data')
+    at CandidateInfo (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/CandidateInfo/index.tsx:33:46)
+    at renderWithHooks (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/CandidateInfo/index.test.tsx:5:18)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Searchbar/index.test.tsx">
+    <testCase name="searchbar" duration="153"/>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/organisms/CandidateTable/index.test.tsx">
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Candidate/index.test.tsx">
+    <testCase name="candidate" duration="73">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;name&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'name')
+    at Candidate (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Candidate/index.tsx:28:54)
+    at renderWithHooks (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Candidate/index.test.tsx:5:18)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Pre-AdverseNotice/index.test.tsx">
+    <testCase name="preadverse" duration="83">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;name&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'name')
+    at AdverseNotice (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Pre-AdverseNotice/index.tsx:21:43)
+    at renderWithHooks (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/dhayb/React/typescript/trackerproblem/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/dhayb/React/typescript/trackerproblem/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/Pre-AdverseNotice/index.test.tsx:5:18)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/molecules/UserInfo/index.test.tsx">
+    <testCase name="userinfo" duration="111">
+      <failure message="Error: expect(received).toMatchSnapshot()"><![CDATA[Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `userinfo 1`
+
+- Snapshot  - 7
++ Received  + 7
+
+@@ -10,11 +10,11 @@
+          >
+            <div
+              class="css-w4z10b-MuiStack-root"
+            >
+              <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-makeStyles-icons-1 MuiButton-makeStyles-icons-1Primary MuiButton-sizeMedium MuiButton-makeStyles-icons-1SizeMedium MuiButton-root MuiButton-makeStyles-icons-1 MuiButton-makeStyles-icons-1Primary MuiButton-sizeMedium MuiButton-makeStyles-icons-1SizeMedium css-1w1rijm-MuiButtonBase-root-MuiButton-root"
++               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+@@ -37,11 +37,11 @@
+              </button>
+              <div
+                class="css-nen11g-MuiStack-root"
+              >
+                <p
+-                 class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                 class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+                >
+                  head
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+@@ -62,11 +62,11 @@
+          >
+            <div
+              class="css-w4z10b-MuiStack-root"
+            >
+              <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-makeStyles-icons-1 MuiButton-makeStyles-icons-1Primary MuiButton-sizeMedium MuiButton-makeStyles-icons-1SizeMedium MuiButton-root MuiButton-makeStyles-icons-1 MuiButton-makeStyles-icons-1Primary MuiButton-sizeMedium MuiButton-makeStyles-icons-1SizeMedium css-1w1rijm-MuiButtonBase-root-MuiButton-root"
++               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+@@ -89,11 +89,11 @@
+              </button>
+              <div
+                class="css-nen11g-MuiStack-root"
+              >
+                <p
+-                 class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                 class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+                >
+                  head
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+@@ -104,22 +104,22 @@
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>,
+-   "container": <div>
++   "container": <div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+        >
+          <div
+            class="css-w4z10b-MuiStack-root"
+          >
+            <button
+-             class="MuiButtonBase-root MuiButton-root MuiButton-makeStyles-icons-1 MuiButton-makeStyles-icons-1Primary MuiButton-sizeMedium MuiButton-makeStyles-icons-1SizeMedium MuiButton-root MuiButton-makeStyles-icons-1 MuiButton-makeStyles-icons-1Primary MuiButton-sizeMedium MuiButton-makeStyles-icons-1SizeMedium css-1w1rijm-MuiButtonBase-root-MuiButton-root"
++             class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+@@ -142,11 +142,11 @@
+            </button>
+            <div
+              class="css-nen11g-MuiStack-root"
+            >
+              <p
+-               class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++               class="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+              >
+                head
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/molecules/UserInfo/index.test.tsx:7:83)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="/home/dhayb/React/typescript/trackerproblem/src/components/organisms/Sidebar/index.test.tsx">
+    <testCase name="sidebar" duration="393">
+      <failure message="Error: expect(received).toMatchSnapshot()"><![CDATA[Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `sidebar 1`
+
+- Snapshot  - 175
++ Received  + 457
+
+@@ -1,896 +1,1178 @@
+  Object {
+    "asFragment": [Function],
+    "baseElement": <body>
+      <div>
++       <div
++         class="makeStyles-list-4 MuiBox-root css-0"
++       >
+          <ul
+-         class="MuiList-root MuiList-padding makeStyles-list-1 css-h4y409-MuiList-root"
++           class="MuiList-root MuiList-padding MuiList-subheader css-p64g7a-MuiList-root"
+          >
+            <li
+-           class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky makeStyles-text-2 css-uob957-MuiListSubheader-root"
++             class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky css-uob957-MuiListSubheader-root"
+            >
+-           <p
+-             class="MuiTypography-root MuiTypography-body1 makeStyles-text-2 css-ahj2mt-MuiTypography-root"
+-           >
+-             Recruit
+-           </p>
++             <img
++               class="makeStyles-recruitimage-1"
++               src="recruit.png"
++             />
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="AppsOutageIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="GridViewOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6 6h4v-4h-4v4zm3-20c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm.5 8h-1V7h1v1zm0-2h-1V2h1v4zM16 14h4v-2.07c-.33.05-.66.07-1 .07-1.07 0-2.09-.24-3-.68V14zM10 4v4h2.68c-.44-.91-.68-1.93-.68-3 0-.34.02-.67.07-1H10z"
++                           d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Home
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+            >
+              <div
++               class="makeStyles-listtext-5"
++             >
++               <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="PersonIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="GroupOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
++                           d="M9 13.75c-2.34 0-7 1.17-7 3.5V19h14v-1.75c0-2.33-4.66-3.5-7-3.5zM4.34 17c.84-.58 2.87-1.25 4.66-1.25s3.82.67 4.66 1.25H4.34zM9 12c1.93 0 3.5-1.57 3.5-3.5S10.93 5 9 5 5.5 6.57 5.5 8.5 7.07 12 9 12zm0-5c.83 0 1.5.67 1.5 1.5S9.83 10 9 10s-1.5-.67-1.5-1.5S8.17 7 9 7zm7.04 6.81c1.16.84 1.96 1.96 1.96 3.44V19h4v-1.75c0-2.02-3.5-3.17-5.96-3.44zM15 12c1.93 0 3.5-1.57 3.5-3.5S16.93 5 15 5c-.54 0-1.04.13-1.5.35.63.89 1 1.98 1 3.15s-.37 2.26-1 3.15c.46.22.96.35 1.5.35z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Candidates
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+            >
+              <div
++               class="makeStyles-listtext-5"
++             >
++               <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="GavelIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="GavelOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z"
++                           d="M1 21h12v2H1v-2zM5.24 8.07l2.83-2.83 14.14 14.14-2.83 2.83L5.24 8.07zM12.32 1l5.66 5.66-2.83 2.83-5.66-5.66L12.32 1zM3.83 9.48l5.66 5.66-2.83 2.83L1 12.31l2.83-2.83z"
+                          />
+                        </svg>
+                      </span>
+-                 Adverseactions
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
++                       Adverse Actions
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
+                </div>
++             </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="FeedTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="FeedOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+-                     <path
+-                       d="M15 5H5v14h14V9h-4V5zM7 7h5v2H7V7zm10 10H7v-2h10v2zm0-6v2H7v-2h10z"
+-                       opacity=".3"
+-                     />
+                          <path
+-                       d="M7 13h10v-2H7v2zm0 4h10v-2H7v2zm9-14H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8l-5-5zm3 16H5V5h10v4h4v10zM12 7H7v2h5V7z"
++                           d="M16 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8l-5-5zm3 16H5V5h10v4h4v10zM7 17h10v-2H7v2zm5-10H7v2h5V7zm-5 6h10v-2H7v2z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Logs
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
+                </div>
++             </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="InsertChartTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="InsertChartOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+-                       opacity=".3"
++                           d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+-                     <path
+-                       d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm2 0h14v14H5V5zm2 5h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"
+-                     />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Analytics
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
+                </div>
++             </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="ManageAccountsTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="ManageAccountsOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+-                     <circle
+-                       cx="10"
+-                       cy="8"
+-                       opacity=".3"
+-                       r="2"
+-                     />
+                          <path
+-                       d="M10 16c0-.34.03-.67.08-.99-.03-.01-.05-.01-.08-.01-1.97 0-3.9.53-5.59 1.54-.25.14-.41.46-.41.81V18h6.29c-.19-.63-.29-1.3-.29-2z"
+-                       opacity=".3"
+-                     />
+-                     <path
+-                       d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.83 6.63-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1c.03-.21.06-.41.06-.63s-.03-.42-.06-.63l1.14-1-1-1.75zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
++                           d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.75 10c0-.22-.03-.42-.06-.63l1.14-1.01-1-1.73-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1.01c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1.01 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1.01c.03-.21.06-.41.06-.63zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Account
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+            >
+              <div
++               class="makeStyles-listtext-5"
++             >
++               <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="DvrTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="DvrOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M3 17h18V5H3v12zm5-9h11v2H8V8zm0 4h11v2H8v-2zM5 8h2v2H5V8zm0 4h2v2H5v-2z"
+-                       opacity=".3"
+-                     />
+-                     <path
+-                       d="M8 12h11v2H8zm0-4h11v2H8zm13-5H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zM5 12h2v2H5zm0-4h2v2H5z"
++                           d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zm-2-9H8v2h11V8zm0 4H8v2h11v-2zM7 8H5v2h2V8zm0 4H5v2h2v-2z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Screenings
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
++           <div
++             class="makeStyles-divider-6"
++           >
++             <hr
++               class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
++             />
++           </div>
++           <div
++             class="makeStyles-profile-7"
++           >
++             <div
++               class="css-w4z10b-MuiStack-root"
++             >
++               <div
++                 class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
++               >
++                 <img
++                   class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
++                   src="sample.png"
++                 />
++               </div>
++               <div
++                 class="css-1okj3ks-MuiStack-root"
++               >
++                 <p
++                   class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                 >
++                   james
++                 </p>
++                 <p
++                   class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                 >
++                   james@gmail.com
++                 </p>
++               </div>
++               <button
++                 class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
++                 tabindex="0"
++                 type="button"
++               >
++                 <svg
++                   aria-hidden="true"
++                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
++                   data-testid="LogoutIcon"
++                   focusable="false"
++                   viewBox="0 0 24 24"
++                 >
++                   <path
++                     d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
++                   />
++                 </svg>
++                 <span
++                   class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
++                 />
++               </button>
++             </div>
++           </div>
+          </ul>
+        </div>
++     </div>
+      <div>
++       <div
++         class="makeStyles-list-4 MuiBox-root css-0"
++       >
+          <ul
+-         class="MuiList-root MuiList-padding makeStyles-list-1 css-h4y409-MuiList-root"
++           class="MuiList-root MuiList-padding MuiList-subheader css-p64g7a-MuiList-root"
+          >
+            <li
+-           class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky makeStyles-text-2 css-uob957-MuiListSubheader-root"
+-         >
+-           <p
+-             class="MuiTypography-root MuiTypography-body1 makeStyles-text-2 css-ahj2mt-MuiTypography-root"
++             class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky css-uob957-MuiListSubheader-root"
+            >
+-             Recruit
+-           </p>
++             <img
++               class="makeStyles-recruitimage-1"
++               src="recruit.png"
++             />
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="AppsOutageIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="GridViewOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6 6h4v-4h-4v4zm3-20c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm.5 8h-1V7h1v1zm0-2h-1V2h1v4zM16 14h4v-2.07c-.33.05-.66.07-1 .07-1.07 0-2.09-.24-3-.68V14zM10 4v4h2.68c-.44-.91-.68-1.93-.68-3 0-.34.02-.67.07-1H10z"
++                           d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Home
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+            >
+              <div
++               class="makeStyles-listtext-5"
++             >
++               <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="PersonIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="GroupOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
++                           d="M9 13.75c-2.34 0-7 1.17-7 3.5V19h14v-1.75c0-2.33-4.66-3.5-7-3.5zM4.34 17c.84-.58 2.87-1.25 4.66-1.25s3.82.67 4.66 1.25H4.34zM9 12c1.93 0 3.5-1.57 3.5-3.5S10.93 5 9 5 5.5 6.57 5.5 8.5 7.07 12 9 12zm0-5c.83 0 1.5.67 1.5 1.5S9.83 10 9 10s-1.5-.67-1.5-1.5S8.17 7 9 7zm7.04 6.81c1.16.84 1.96 1.96 1.96 3.44V19h4v-1.75c0-2.02-3.5-3.17-5.96-3.44zM15 12c1.93 0 3.5-1.57 3.5-3.5S16.93 5 15 5c-.54 0-1.04.13-1.5.35.63.89 1 1.98 1 3.15s-.37 2.26-1 3.15c.46.22.96.35 1.5.35z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Candidates
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
+                </div>
++             </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+            >
+              <div
++               class="makeStyles-listtext-5"
++             >
++               <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="GavelIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="GavelOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z"
++                           d="M1 21h12v2H1v-2zM5.24 8.07l2.83-2.83 14.14 14.14-2.83 2.83L5.24 8.07zM12.32 1l5.66 5.66-2.83 2.83-5.66-5.66L12.32 1zM3.83 9.48l5.66 5.66-2.83 2.83L1 12.31l2.83-2.83z"
+                          />
+                        </svg>
+                      </span>
+-                 Adverseactions
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
++                       Adverse Actions
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="FeedTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="FeedOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M15 5H5v14h14V9h-4V5zM7 7h5v2H7V7zm10 10H7v-2h10v2zm0-6v2H7v-2h10z"
+-                       opacity=".3"
++                           d="M16 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8l-5-5zm3 16H5V5h10v4h4v10zM7 17h10v-2H7v2zm5-10H7v2h5V7zm-5 6h10v-2H7v2z"
+                          />
+-                     <path
+-                       d="M7 13h10v-2H7v2zm0 4h10v-2H7v2zm9-14H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8l-5-5zm3 16H5V5h10v4h4v10zM12 7H7v2h5V7z"
+-                     />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Logs
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="InsertChartTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="InsertChartOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+-                     <path
+-                       d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+-                       opacity=".3"
+-                     />
+                          <path
+-                       d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm2 0h14v14H5V5zm2 5h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"
++                           d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Analytics
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
++               </div>
+              </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++           >
++             <div
++               class="makeStyles-listtext-5"
+              >
+                <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="ManageAccountsTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="ManageAccountsOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+-                     <circle
+-                       cx="10"
+-                       cy="8"
+-                       opacity=".3"
+-                       r="2"
+-                     />
+                          <path
+-                       d="M10 16c0-.34.03-.67.08-.99-.03-.01-.05-.01-.08-.01-1.97 0-3.9.53-5.59 1.54-.25.14-.41.46-.41.81V18h6.29c-.19-.63-.29-1.3-.29-2z"
+-                       opacity=".3"
++                           d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.75 10c0-.22-.03-.42-.06-.63l1.14-1.01-1-1.73-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1.01c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1.01 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1.01c.03-.21.06-.41.06-.63zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                          />
+-                     <path
+-                       d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.83 6.63-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1c.03-.21.06-.41.06-.63s-.03-.42-.06-.63l1.14-1-1-1.75zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+-                     />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Account
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
+                </div>
++             </div>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+            >
+              <div
++               class="makeStyles-listtext-5"
++             >
++               <div
+                  class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <button
+-                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                     class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <svg
+                          aria-hidden="true"
+-                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                     data-testid="DvrTwoToneIcon"
++                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                         data-testid="DvrOutlinedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+-                       d="M3 17h18V5H3v12zm5-9h11v2H8V8zm0 4h11v2H8v-2zM5 8h2v2H5V8zm0 4h2v2H5v-2z"
+-                       opacity=".3"
+-                     />
+-                     <path
+-                       d="M8 12h11v2H8zm0-4h11v2H8zm13-5H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zM5 12h2v2H5zm0-4h2v2H5z"
++                           d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zm-2-9H8v2h11V8zm0 4H8v2h11v-2zM7 8H5v2h2V8zm0 4H5v2h2v-2z"
+                          />
+                        </svg>
+                      </span>
++                     <p
++                       class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                     >
+                        Screenings
++                     </p>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </span>
+                </div>
++             </div>
+            </li>
++           <div
++             class="makeStyles-divider-6"
++           >
++             <hr
++               class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
++             />
++           </div>
++           <div
++             class="makeStyles-profile-7"
++           >
++             <div
++               class="css-w4z10b-MuiStack-root"
++             >
++               <div
++                 class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
++               >
++                 <img
++                   class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
++                   src="sample.png"
++                 />
++               </div>
++               <div
++                 class="css-1okj3ks-MuiStack-root"
++               >
++                 <p
++                   class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                 >
++                   james
++                 </p>
++                 <p
++                   class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                 >
++                   james@gmail.com
++                 </p>
++               </div>
++               <button
++                 class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
++                 tabindex="0"
++                 type="button"
++               >
++                 <svg
++                   aria-hidden="true"
++                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
++                   data-testid="LogoutIcon"
++                   focusable="false"
++                   viewBox="0 0 24 24"
++                 >
++                   <path
++                     d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
++                   />
++                 </svg>
++                 <span
++                   class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
++                 />
++               </button>
++             </div>
++           </div>
+          </ul>
++       </div>
+      </div>
+    </body>,
+-   "container": <div>
++   "container": <div>
++     <div
++       class="makeStyles-list-4 MuiBox-root css-0"
++     >
+        <ul
+-       class="MuiList-root MuiList-padding makeStyles-list-1 css-h4y409-MuiList-root"
++         class="MuiList-root MuiList-padding MuiList-subheader css-p64g7a-MuiList-root"
+        >
+          <li
+-         class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky makeStyles-text-2 css-uob957-MuiListSubheader-root"
+-       >
+-         <p
+-           class="MuiTypography-root MuiTypography-body1 makeStyles-text-2 css-ahj2mt-MuiTypography-root"
++           class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky css-uob957-MuiListSubheader-root"
+          >
+-           Recruit
+-         </p>
++           <img
++             class="makeStyles-recruitimage-1"
++             src="recruit.png"
++           />
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+          >
+            <div
++             class="makeStyles-listtext-5"
++           >
++             <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="AppsOutageIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="GridViewOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+-                     d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6 6h4v-4h-4v4zm3-20c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm.5 8h-1V7h1v1zm0-2h-1V2h1v4zM16 14h4v-2.07c-.33.05-.66.07-1 .07-1.07 0-2.09-.24-3-.68V14zM10 4v4h2.68c-.44-.91-.68-1.93-.68-3 0-.34.02-.67.07-1H10z"
++                         d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"
+                        />
+                      </svg>
+                    </span>
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
+                      Home
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
++             </div>
+            </div>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++         >
++           <div
++             class="makeStyles-listtext-5"
+            >
+              <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="PersonIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="GroupOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+-                     d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
++                         d="M9 13.75c-2.34 0-7 1.17-7 3.5V19h14v-1.75c0-2.33-4.66-3.5-7-3.5zM4.34 17c.84-.58 2.87-1.25 4.66-1.25s3.82.67 4.66 1.25H4.34zM9 12c1.93 0 3.5-1.57 3.5-3.5S10.93 5 9 5 5.5 6.57 5.5 8.5 7.07 12 9 12zm0-5c.83 0 1.5.67 1.5 1.5S9.83 10 9 10s-1.5-.67-1.5-1.5S8.17 7 9 7zm7.04 6.81c1.16.84 1.96 1.96 1.96 3.44V19h4v-1.75c0-2.02-3.5-3.17-5.96-3.44zM15 12c1.93 0 3.5-1.57 3.5-3.5S16.93 5 15 5c-.54 0-1.04.13-1.5.35.63.89 1 1.98 1 3.15s-.37 2.26-1 3.15c.46.22.96.35 1.5.35z"
+                        />
+                      </svg>
+                    </span>
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
+                      Candidates
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
++             </div>
+            </div>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
++         >
++           <div
++             class="makeStyles-listtext-5"
+            >
+              <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="GavelIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="GavelOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+-                     d="m5.2494 8.0688 2.83-2.8269 14.1343 14.15-2.83 2.8269zm4.2363-4.2415 2.828-2.8289 5.6577 5.656-2.828 2.8289zM.9989 12.3147l2.8284-2.8285 5.6569 5.6569-2.8285 2.8284zM1 21h12v2H1z"
++                         d="M1 21h12v2H1v-2zM5.24 8.07l2.83-2.83 14.14 14.14-2.83 2.83L5.24 8.07zM12.32 1l5.66 5.66-2.83 2.83-5.66-5.66L12.32 1zM3.83 9.48l5.66 5.66-2.83 2.83L1 12.31l2.83-2.83z"
+                        />
+                      </svg>
+                    </span>
+-               Adverseactions
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
++                     Adverse Actions
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
++             </div>
+            </div>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+          >
+            <div
++             class="makeStyles-listtext-5"
++           >
++             <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="FeedTwoToneIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="FeedOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+-                     d="M15 5H5v14h14V9h-4V5zM7 7h5v2H7V7zm10 10H7v-2h10v2zm0-6v2H7v-2h10z"
+-                     opacity=".3"
+-                   />
+-                   <path
+-                     d="M7 13h10v-2H7v2zm0 4h10v-2H7v2zm9-14H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8l-5-5zm3 16H5V5h10v4h4v10zM12 7H7v2h5V7z"
++                         d="M16 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8l-5-5zm3 16H5V5h10v4h4v10zM7 17h10v-2H7v2zm5-10H7v2h5V7zm-5 6h10v-2H7v2z"
+                        />
+                      </svg>
+                    </span>
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
+                      Logs
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
++             </div>
+            </div>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+          >
+            <div
++             class="makeStyles-listtext-5"
++           >
++             <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="InsertChartTwoToneIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="InsertChartOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+-                     d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+-                     opacity=".3"
+-                   />
+-                   <path
+-                     d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm2 0h14v14H5V5zm2 5h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"
++                         d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                        />
+                      </svg>
+                    </span>
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
+                      Analytics
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
++             </div>
+            </div>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+          >
+            <div
++             class="makeStyles-listtext-5"
++           >
++             <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="ManageAccountsTwoToneIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="ManageAccountsOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+-                   <circle
+-                     cx="10"
+-                     cy="8"
+-                     opacity=".3"
+-                     r="2"
+-                   />
+                        <path
+-                     d="M10 16c0-.34.03-.67.08-.99-.03-.01-.05-.01-.08-.01-1.97 0-3.9.53-5.59 1.54-.25.14-.41.46-.41.81V18h6.29c-.19-.63-.29-1.3-.29-2z"
+-                     opacity=".3"
+-                   />
+-                   <path
+-                     d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.83 6.63-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1c.03-.21.06-.41.06-.63s-.03-.42-.06-.63l1.14-1-1-1.75zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
++                         d="M4 18v-.65c0-.34.16-.66.41-.81C6.1 15.53 8.03 15 10 15c.03 0 .05 0 .08.01.1-.7.3-1.37.59-1.98-.22-.02-.44-.03-.67-.03-2.42 0-4.68.67-6.61 1.82-.88.52-1.39 1.5-1.39 2.53V20h9.26c-.42-.6-.75-1.28-.97-2H4zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm10.75 10c0-.22-.03-.42-.06-.63l1.14-1.01-1-1.73-1.45.49c-.32-.27-.68-.48-1.08-.63L18 11h-2l-.3 1.49c-.4.15-.76.36-1.08.63l-1.45-.49-1 1.73 1.14 1.01c-.03.21-.06.41-.06.63s.03.42.06.63l-1.14 1.01 1 1.73 1.45-.49c.32.27.68.48 1.08.63L16 21h2l.3-1.49c.4-.15.76-.36 1.08-.63l1.45.49 1-1.73-1.14-1.01c.03-.21.06-.41.06-.63zM17 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                        />
+                      </svg>
+                    </span>
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
+                      Account
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
+              </div>
++           </div>
+          </li>
+          <li
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+          >
+            <div
++             class="makeStyles-listtext-5"
++           >
++             <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  <button
+-               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium makeStyles-listbutton-3 css-1e6y48t-MuiButtonBase-root-MuiButton-root"
++                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                    >
+                      <svg
+                        aria-hidden="true"
+-                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+-                   data-testid="DvrTwoToneIcon"
++                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-icon-2 css-i4bv87-MuiSvgIcon-root"
++                       data-testid="DvrOutlinedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+-                     d="M3 17h18V5H3v12zm5-9h11v2H8V8zm0 4h11v2H8v-2zM5 8h2v2H5V8zm0 4h2v2H5v-2z"
+-                     opacity=".3"
++                         d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zm-2-9H8v2h11V8zm0 4H8v2h11v-2zM7 8H5v2h2V8zm0 4H5v2h2v-2z"
+                        />
+-                   <path
+-                     d="M8 12h11v2H8zm0-4h11v2H8zm13-5H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zM5 12h2v2H5zm0-4h2v2H5z"
+-                   />
+                      </svg>
+                    </span>
++                   <p
++                     class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++                   >
+                      Screenings
++                   </p>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </span>
+              </div>
++           </div>
+          </li>
++         <div
++           class="makeStyles-divider-6"
++         >
++           <hr
++             class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
++           />
++         </div>
++         <div
++           class="makeStyles-profile-7"
++         >
++           <div
++             class="css-w4z10b-MuiStack-root"
++           >
++             <div
++               class="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
++             >
++               <img
++                 class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
++                 src="sample.png"
++               />
++             </div>
++             <div
++               class="css-1okj3ks-MuiStack-root"
++             >
++               <p
++                 class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++               >
++                 james
++               </p>
++               <p
++                 class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
++               >
++                 james@gmail.com
++               </p>
++             </div>
++             <button
++               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
++               tabindex="0"
++               type="button"
++             >
++               <svg
++                 aria-hidden="true"
++                 class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
++                 data-testid="LogoutIcon"
++                 focusable="false"
++                 viewBox="0 0 24 24"
++               >
++                 <path
++                   d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
++                 />
++               </svg>
++               <span
++                 class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
++               />
++             </button>
++           </div>
++         </div>
+        </ul>
++     </div>
+    </div>,
+    "debug": [Function],
+    "findAllByAltText": [Function],
+    "findAllByDisplayValue": [Function],
+    "findAllByLabelText": [Function],
+    at Object.<anonymous> (/home/dhayb/React/typescript/trackerproblem/src/components/organisms/Sidebar/index.test.tsx:6:32)
+    at Promise.then.completed (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:66:9)
+    at run (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/dhayb/React/typescript/trackerproblem/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+  </file>
+</testExecutions>
